@@ -1,0 +1,26 @@
+.player-score {
+  display: inline-flex;
+  gap: 1px;
+  border: var(--border-size) solid var(--color-fiery-rose);
+  background-color: var(--color-floral-white);
+  padding: 1px;
+}
+
+.player-score > .pixel {
+  --size: 14px;
+
+  background-color: var(--color-old-silver);
+  width: var(--size);
+  height: var(--size);
+  text-indent: -9999px;
+}
+
+.player-score[data-score="1"] > .pixel:first-child {
+  background-color: var(--color-mantis);
+}
+.player-score[data-score="2"] > .pixel:nth-last-child(n + 2) {
+  background-color: var(--color-mantis);
+}
+.player-score[data-score="3"] > .pixel {
+  background-color: var(--color-mantis);
+}

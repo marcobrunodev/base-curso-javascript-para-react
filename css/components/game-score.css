@@ -1,0 +1,24 @@
+.game-score {
+  position: relative;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+  color: var(--color-sandstorm);
+}
+
+.game-score::before {
+  content: url(../../images/icon-arrow-down.png);
+  position: absolute;
+  transition: transform 200ms ease-in-out;
+  transform: translateY(-125%);
+}
+
+.game-score[data-currentIdPlayer="1"]::before {
+  transform: translate(-200%, -135%);
+}
+
+.game-score[data-currentIdPlayer="2"]::before {
+  transform: translate(200%, -135%);
+}

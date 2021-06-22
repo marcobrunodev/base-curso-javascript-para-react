@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matching game</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
+
+  <link rel="stylesheet" href="css/settings/colors.css">
+  <link rel="stylesheet" href="css/tools/ness-border.css">
+  <link rel="stylesheet" href="css/generic/reset.css">
+  <link rel="stylesheet" href="css/elements/base.css">
+  <link rel="stylesheet" href="css/objects/board-game.css">
+  <link rel="stylesheet" href="css/components/card-front-back.css">
+  <link rel="stylesheet" href="css/components/game-score.css">
+  <link rel="stylesheet" href="css/components/player-status.css">
+  <link rel="stylesheet" href="css/components/player-score.css">
+  <link rel="stylesheet" href="css/components/card-game.css">
+  <link rel="stylesheet" href="css/components/win-modal.css">
+</head>
+<body>
+  <header class="game-score" data-currentIdPlayer="1">
+    <dl class="player-status" data-idPlayer="1">
+      <dt class="title">Player1</dt>
+      <dd class="score ness-border">
+        <ol class="player-score" data-score="0">
+          <li class="pixel">1</li>
+          <li class="pixel">2</li>
+          <li class="pixel">3</li>
+        </ol>
+      </dd>
+    </dl>
+    <p class="content">vs</p>
+    <dl class="player-status -right" data-idPlayer="2">
+      <dt class="title">Player2</dt>
+      <dd class="score ness-border">
+        <ol class="player-score" data-score="0">
+          <li class="pixel">1</li>
+          <li class="pixel">2</li>
+          <li class="pixel">3</li>
+        </ol>
+      </dd>
+    </dl>
+  </header>
+
+  <section class="board-game" data-actions="0" data-idCards="">
+    <div class="card-front-back" data-id="0">
+      <div class="ness-border -big -front">
+        <figure class="card-game">
+          <img src="images/alura-pixel.png" alt="Logo da Alura" class="icon">
+        </figure>
+      </div>
+      <div class=" ness-border -big -back">
+        <figure class="card-game">
+          <img src="images/javascript.png" alt="Logo do JavaScript" class="icon">
+        </figure>
+      </div>
+    </div>
+    <div class="card-front-back"  data-id="1">
+      <div class="ness-border -big -front">
+        <figure class="card-game">
+          <img src="images/alura-pixel.png" alt="Logo da Alura" class="icon">
+        </figure>
+      </div>
+      <div class=" ness-border -big -back">
+        <figure class="card-game">
+          <img src="images/javascript.png" alt="Logo do JavaScript" class="icon">
+        </figure>
+      </div>
+    </div>
+    <div class="card-front-back"  data-id="2">
+      <div class="ness-border -big -front">
+        <figure class="card-game">
+          <img src="images/alura-pixel.png" alt="Logo da Alura" class="icon">
+        </figure>
+      </div>
+      <div class=" ness-border -big -back">
+        <figure class="card-game">
+          <img src="images/css.png" alt="Logo do CSS" class="icon">
+        </figure>
+      </div>
+    </div>
+    <div class="card-front-back" data-id="3">
+      <div class="ness-border -big -front">
+        <figure class="card-game">
+          <img src="images/alura-pixel.png" alt="Logo da Alura" class="icon">
+        </figure>
+      </div>
+      <div class=" ness-border -big -back">
+        <figure class="card-game">
+          <img src="images/css.png" alt="Logo do CSS" class="icon">
+        </figure>
+      </div>
+    </div>
+    <div class="card-front-back" data-id="4">
+      <div class="ness-border -big -front">
+        <figure class="card-game">
+          <img src="images/alura-pixel.png" alt="Logo da Alura" class="icon">
+        </figure>
+      </div>
+      <div class=" ness-border -big -back">
+        <figure class="card-game">
+          <img src="images/html.png" alt="Logo do HTML" class="icon">
+        </figure>
+      </div>
+    </div>
+    <div class="card-front-back" data-id="5">
+      <div class="ness-border -big -front">
+        <figure class="card-game">
+          <img src="images/alura-pixel.png" alt="Logo da Alura" class="icon">
+        </figure>
+      </div>
+      <div class=" ness-border -big -back">
+        <figure class="card-game">
+          <img src="images/html.png" alt="Logo do HTML" class="icon">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="win-modal">
+    <div class="ness-border -big">      
+      <div class="modal">
+        <h2 class="subtitle">Player1</h2>
+        <h1 class="title">Winner!!!</h1>
+        <img src="images/winner.png" alt="Ícone de um troféu">
+        <div class="ness-border">
+          <button class="button">restart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="javascript/store.js"></script>
+  <script src="javascript/objects/board-game.js"></script>
+  <script src="javascript/components/game-score.js"></script>
+  <script src="javascript/components/win-modal.js"></script>
+</body>
+</html>

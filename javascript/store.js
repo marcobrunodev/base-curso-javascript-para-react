@@ -1,0 +1,1 @@
+let scoreTotal = 0;

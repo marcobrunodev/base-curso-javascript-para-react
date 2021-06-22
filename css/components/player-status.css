@@ -1,0 +1,12 @@
+.player-status {
+  display: flex;
+  font-size: 1rem;
+  line-height: 1em;
+  gap: 0.5rem;
+  color: var(--color-floral-white);
+  align-items: center;
+}
+
+.player-status.-right {
+  flex-direction: row-reverse;
+}

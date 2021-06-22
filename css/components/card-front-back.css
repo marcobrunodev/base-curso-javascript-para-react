@@ -1,0 +1,25 @@
+.card-front-back {
+  position: relative;
+  transition: transform 500ms ease-in-out;
+  transform-style: preserve-3d;
+}
+
+.card-front-back.-active {
+  transform: rotateY(180deg);
+}
+
+.card-front-back > .ness-border {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.card-front-back > .ness-border.-back {
+  background-color: var(--color-fiery-rose);
+  transform: rotateY(180deg);
+}
+
+.card-front-back > .ness-border.-back > .card-game {
+  background-color: var(--color-fiery-rose);
+}
